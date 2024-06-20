@@ -39,6 +39,10 @@ def main():
     ps.add_argument("--maxiter", default=15, type=int, help="Maximum number of minimization iterations")
     ps.add_argument("--microiter", default=20, type=int, help="Maximum number of micro iterations for "
                     "sweeping algorithm.")
+    ps.add_argument("--seed_midpoint", default=None, type=int, help="It is the seed value used inside the"
+                                                                    " mid_point function.")
+    ps.add_argument("--seed_get_bond_list", default=None, type=int, help="It is the seed value used inside"
+                                                                         " the get_bond_list function.")
     ps.add_argument("--scaling", default=1.7, type=float, help="Exponential parameter for morse potential")
     ps.add_argument("--friction", default=1e-2, type=float, help="Size of friction term used to prevent "
                     "very large change of geometry.")
